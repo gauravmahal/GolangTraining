@@ -1,3 +1,6 @@
 [submodule "GolangTraining"]
 	path = GolangTraining
 	url = git@github.com:GoesToEleven/GolangTraining.git
+[submodule "go-programming"]
+	path = go-programming
+	url = git@github.com:GoesToEleven/go-programming.git
