@@ -11,7 +11,7 @@ go mod tidy // removes unused dependencies.
 
 #### String blog
 * Strings, bytes, runes and characters in Go - https://go.dev/blog/strings 
-* a string is in effect a read-only slice of bytes
+* String is in effect a read-only slice of bytes
 ```go
 const sample = "\xbd\xb2\x3d\xbc\x20\xe2\x8c\x98" //some of the bytes in the sample string are not valid ASCII, not even valid UTF-8
 fmt.Println(sample) // ��=� ⌘
@@ -23,4 +23,7 @@ fmt.Printf("%+q\n", sample) // "\xbd\xb2=\xbc \u2318" %q (quoted) verb will esca
 * GO defines rune as an alias for the type int32 
     '⌘' - rune with integer value 0x2318
 * for range loop, by contrast, decodes one UTF-8-encoded rune on each iteration.
+
+#### iota 
+* It is reset to 0 whenever the reserved word const appears in the source
 
