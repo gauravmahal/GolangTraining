@@ -1,3 +1,6 @@
+### Important links 
+* https://gobyexample.com/ 
+
 ### Go modules  
 ```go
 go mod init // creates a new module, initializing the go.mod file that describes it.
@@ -27,3 +30,11 @@ fmt.Printf("%+q\n", sample) // "\xbd\xb2=\xbc \u2318" %q (quoted) verb will esca
 #### iota 
 * It is reset to 0 whenever the reserved word const appears in the source
 
+### Grouping Data
+
+#### Arrays
+* Arrays are values. Assigning one array to another copies all the elements.
+* In particular, if you pass an array to a function, it will receive a copy of the array, not a pointer to it.
+* The size of an array is part of its type. The types [10]int and [20]int are distinct.
+
+ * Slices allow you to group together VALUES of same TYPE
