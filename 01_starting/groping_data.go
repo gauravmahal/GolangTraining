@@ -18,6 +18,8 @@ func main() {
 	fmt.Println(x[0])
 	fmt.Println(x[1])
 
+	fmt.Println("---------------------")
+
 	// range for loop
 	for i, v := range x {
 		fmt.Println(i, v)
@@ -33,12 +35,16 @@ func main() {
 		fmt.Println(i, y[i])
 	}
 
+	fmt.Println("---------------------")
+
 	//append
 	y = append(y, 21, 12, 34, 54, 454, 4)
 	fmt.Println(y)
 
 	x = append(x, y...)
 	fmt.Println(x)
+
+	fmt.Println("---------------------")
 
 	//deleting from slice
 	x = append(x[:3], x[5:]...)
@@ -53,6 +59,8 @@ func main() {
 	a := [][]int{x, y, z}
 	fmt.Println(a)
 
+	fmt.Println("---------------------")
+
 	//map
 	m := map[string]int{
 		"James":      35,
@@ -62,11 +70,27 @@ func main() {
 	fmt.Println(m["James"])
 	fmt.Println(m["Barnas"])
 
+	// comma OK idiom
 	n, ok := m["Barnas"]
-	fmt.Println(n)
-	fmt.Println(ok)
+	fmt.Println("n :", n)
+	fmt.Println("ok :", ok)
 
-	if n, ok := m["Barnas"]; ok {
-		fmt.Println("This is inside if ", n)
+	if n, ok := m["Moneypenny"]; ok {
+		fmt.Println("This is inside if statement ", n)
 	}
+
+	fmt.Println("---------------------")
+
+	m["todd"] = 33
+
+	for k, v := range m {
+		fmt.Println(k, " : ", v)
+	}
+
+	fmt.Println(m)
+	delete(m, "James")
+	fmt.Println(m)
+
+	fmt.Println("---------------------")
+
 }

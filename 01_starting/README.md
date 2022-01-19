@@ -38,3 +38,9 @@ fmt.Printf("%+q\n", sample) // "\xbd\xb2=\xbc \u2318" %q (quoted) verb will esca
 * The size of an array is part of its type. The types [10]int and [20]int are distinct.
 
  * Slices allow you to group together VALUES of same TYPE
+
+ ### Structs
+
+ ### Functions
+ * Everything in Go is PASS BY VALUE
+ 
