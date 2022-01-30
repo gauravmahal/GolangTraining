@@ -43,4 +43,13 @@ fmt.Printf("%+q\n", sample) // "\xbd\xb2=\xbc \u2318" %q (quoted) verb will esca
 
  ### Functions
  * Everything in Go is PASS BY VALUE
+ * Variadic parameter has to be the final parameter
+ * Empty Interface - Every value can be put in there 
+ ```go
+ type emptyInetrface interface {}
+ ```
+ * Compostion in Go - https://www.ardanlabs.com/blog/2015/09/composition-with-go.html 
+
+### Poniters
+
  
