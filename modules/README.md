@@ -51,5 +51,8 @@ fmt.Printf("%+q\n", sample) // "\xbd\xb2=\xbc \u2318" %q (quoted) verb will esca
  * Compostion in Go - https://www.ardanlabs.com/blog/2015/09/composition-with-go.html 
 
 ### Poniters
+#### Method Sets 
+* Method set of any type T consists of all methods declared with receiver type T.
+* Method set of the corresponding pointer type *T is the set of all methods declared with receiver *T or T 
 
  
