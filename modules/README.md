@@ -48,11 +48,24 @@ fmt.Printf("%+q\n", sample) // "\xbd\xb2=\xbc \u2318" %q (quoted) verb will esca
  ```go
  type emptyInetrface interface {}
  ```
- * Compostion in Go - https://www.ardanlabs.com/blog/2015/09/composition-with-go.html 
+ * [Compostion in Go](https://www.ardanlabs.com/blog/2015/09/composition-with-go.html)
 
 ### Poniters
 #### Method Sets 
 * Method set of any type T consists of all methods declared with receiver type T.
-* Method set of the corresponding pointer type *T is the set of all methods declared with receiver *T or T 
+* Method set of the corresponding pointer type *T is the set of all methods declared with receiver *T or T
 
- 
+
+### Application
+ * Types, constants, fields with a capital first letters are visible to external program/packages.
+ * [About JSON](https://htmlpreview.github.io/?https://github.com/GoesToEleven/golang-web-dev/blob/master/040_json/README.html)
+* Go uses these six types for all values parsed into interfaces:
+```go
+    bool, for JSON booleans
+    float64, for JSON numbers
+    string, for JSON strings
+    []interface{}, for JSON arrays
+    map[string]interface{}, for JSON objects
+    nil for JSON null
+```
+* https://mholt.github.io/json-to-go/ 
