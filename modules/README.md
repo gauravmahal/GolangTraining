@@ -49,6 +49,18 @@ fmt.Printf("%+q\n", sample) // "\xbd\xb2=\xbc \u2318" %q (quoted) verb will esca
  type emptyInetrface interface {}
  ```
  * [Compostion in Go](https://www.ardanlabs.com/blog/2015/09/composition-with-go.html)
+ * Nested function declaration is not allowed in Go. But you can assign them to a variable like expression
+ ```go
+ //Not allowed
+func main() {
+    func inc(x int) int { return x+1; }
+}
+//allowed
+func main() {
+    inc := func(x int) int { return x+1; }
+}
+
+ ```
 
 ### Poniters
 #### Method Sets 
@@ -69,3 +81,4 @@ fmt.Printf("%+q\n", sample) // "\xbd\xb2=\xbc \u2318" %q (quoted) verb will esca
     nil for JSON null
 ```
 * https://mholt.github.io/json-to-go/ 
+* crypto/bcrypt - for encrtyption of passwords 
