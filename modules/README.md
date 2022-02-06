@@ -102,8 +102,11 @@ func main() {
 * time package -  for time and sleep operations 
 * Rob Pike code source [link](https://talks.golang.org/2012/concurrency.slide#25)
 * Nice blog:- [Go Concurrency Patterns: Pipelines and cancellation](https://blog.golang.org/pipelines)
-* Context - package for easy to pass request-scoped values
+* Context package - used for easy to pass request-scoped values in goroutines
     * [Go Concurrency Patterns: Context](https://go.dev/blog/context)
+
+### Error Handling
+* 
 
 
 #### TODO
