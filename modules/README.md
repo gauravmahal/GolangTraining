@@ -89,3 +89,6 @@ func main() {
 * runtime package - for curr architecure, CPU etc.
 * sync package - provides basic synchronization primitives like Mutex, WaitGroup
 * atomic package - provides low-level atomic memory primitives useful for implementing synchronization algorithms
+
+### Channels
+*
