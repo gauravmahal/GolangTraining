@@ -86,9 +86,27 @@ func main() {
 * crypto/bcrypt - for encrtyption of passwords 
 
 ### Concurrency
+* _**Do not communicate by sharing memory; instead, share memory by communicating**_
 * runtime package - for curr architecure, CPU etc.
 * sync package - provides basic synchronization primitives like Mutex, WaitGroup
 * atomic package - provides low-level atomic memory primitives useful for implementing synchronization algorithms
 
 ### Channels
-*
+* **Channels block**
+    * they are like runners in a relay race
+* In general, don't use buffers instead make use of hand shaking by passing sender and reciever
+* Channel type. Read from left to right.
+    * recieveing from channel an int (<-ch int)
+    * channel sending an int (ch<- int)
+* **Range clause on channel block till channel is close**
+* time package -  for time and sleep operations 
+* Rob Pike code source [link](https://talks.golang.org/2012/concurrency.slide#25)
+* Nice blog:- [Go Concurrency Patterns: Pipelines and cancellation](https://blog.golang.org/pipelines)
+* Context - package for easy to pass request-scoped values
+    * [Go Concurrency Patterns: Context](https://go.dev/blog/context)
+
+
+#### TODO
+    // read go channel documentation
+    // select documentation
+    // context documentation
