@@ -8,6 +8,8 @@ go build; go test // and other package-building commands add new dependencies to
 go list -m all // prints the current module’s dependencies.
 go get // changes the required version of a dependency (or adds a new dependency).
 go mod tidy // removes unused dependencies.
+go run  // compile and run the named main go package 
+        // --race to find any race condition in program 
 ```
 
 ### Programming fundamentals
@@ -82,3 +84,8 @@ func main() {
 ```
 * https://mholt.github.io/json-to-go/ 
 * crypto/bcrypt - for encrtyption of passwords 
+
+### Concurrency
+* runtime package - for curr architecure, CPU etc.
+* sync package - provides basic synchronization primitives like Mutex, WaitGroup
+* atomic package - provides low-level atomic memory primitives useful for implementing synchronization algorithms
