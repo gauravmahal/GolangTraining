@@ -83,13 +83,16 @@ func main() {
     nil for JSON null
 ```
 * https://mholt.github.io/json-to-go/ 
+* os package - for file handling, in/op file
 * crypto/bcrypt - for encrtyption of passwords 
+* bufio package - implements buffered I/O 
 
 ### Concurrency
 * _**Do not communicate by sharing memory; instead, share memory by communicating**_
 * runtime package - for curr architecure, CPU etc.
 * sync package - provides basic synchronization primitives like Mutex, WaitGroup
 * atomic package - provides low-level atomic memory primitives useful for implementing synchronization algorithms
+* The method set of a type determines the INTERFACES that the type implements...
 
 ### Channels
 * **Channels block**
@@ -106,10 +109,18 @@ func main() {
     * [Go Concurrency Patterns: Context](https://go.dev/blog/context)
 
 ### Error Handling
-* 
+* [Error handling and Go](https://go.dev/blog/error-handling-and-go)
+* _**Always check for errors. Always, always, always.**_
+* log package - implements a simple logging package
+* [Defer, Panic, and Recover](https://go.dev/blog/defer-panic-and-recover)
+*
 
 
 #### TODO
     // read go channel documentation
     // select documentation
     // context documentation
+    // and above two articles on go concurrency
+    // error documentation
+    
+    
