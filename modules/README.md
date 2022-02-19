@@ -113,7 +113,17 @@ func main() {
 * _**Always check for errors. Always, always, always.**_
 * log package - implements a simple logging package
 * [Defer, Panic, and Recover](https://go.dev/blog/defer-panic-and-recover)
-*
+
+### Writing Documentation
+* ```go 
+    go doc [<pkg>].<sym>.[<method>]
+    ```
+    Prints the documentation for the a package, const etc
+* ```go
+    godoc -http=:8000
+    ```
+    Runs as a local web server and presents the documentation as a web page
+* [Godoc: documenting Go code](https://go.dev/blog/godoc)
 
 
 #### TODO
@@ -121,6 +131,5 @@ func main() {
     // select documentation
     // context documentation
     // and above two articles on go concurrency
-    // error documentation
     
     
