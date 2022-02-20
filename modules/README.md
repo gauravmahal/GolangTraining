@@ -10,6 +10,7 @@ go get // changes the required version of a dependency (or adds a new dependency
 go mod tidy // removes unused dependencies.
 go run  // compile and run the named main go package 
         // --race to find any race condition in program 
+go test // Run a test 
 ```
 
 ### Programming fundamentals
@@ -124,6 +125,12 @@ func main() {
     ```
     Runs as a local web server and presents the documentation as a web page
 * [Godoc: documenting Go code](https://go.dev/blog/godoc)
+
+### Testing and Benchmark
+* Tests must
+    * be in a file that ends with **“_test.go”**
+    * put the file in **the same package** as the one being tested
+    * be in a func with a signature **“func TestXxx(*testing.T)”**
 
 
 #### TODO
